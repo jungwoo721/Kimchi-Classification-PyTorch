@@ -23,22 +23,22 @@ $ Python prepare_dataset.py
 ```
 
 ## Train
-'''
+```
 $ python train.py -c config.json
-'''
-'''
+```
+```
 $ python train.py -r path/to/ckpt_file.pth
-'''
+```
 
 ## Test
-'''
+```
 $ python test.py -r path/to/ckpt_file.pth
-'''
+```
 
 ## Tensorboard Visualization
-'''
+```
 $ tensorboard --logdir saved/log/
-'''
+```
 
 ## Folder Structure
   ```
