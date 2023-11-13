@@ -43,7 +43,7 @@ $ tensorboard --logdir saved/log/
 
 ## Folder Structure
   ```
-  Kimchi-Classification/
+  kimchi_classification/
   │
   ├── train.py - main script to start training
   ├── test.py - evaluation of trained model
