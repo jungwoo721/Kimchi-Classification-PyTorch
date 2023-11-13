@@ -7,7 +7,8 @@
 
 ## Introduction
 
-We will build a neural network to classify kind of Kimchies. You need to build a deep neural network to classify the 11 detailed classes of Korean Kimchie; ['갓김치', '깍두기', '나박김치', '무생채', '배추김치', '백김치', '부추김치', '열무김치', '오이소박이', '총각김치', '파김치'].
+We will build a neural network to classify kind of Kimchies. You need to build a deep neural network to classify the 11 detailed classes of Korean Kimchi
+['갓김치', '깍두기', '나박김치', '무생채', '배추김치', '백김치', '부추김치', '열무김치', '오이소박이', '총각김치', '파김치'].
 
 ## Preparation
 
@@ -25,7 +26,6 @@ We will build a neural network to classify kind of Kimchies. You need to build a
 $ Python prepare_dataset.py
 ```
 
-
 ## Train
 `python train.py -c config.json`
 
@@ -36,69 +36,6 @@ $ Python prepare_dataset.py
 
 ## Tensorboard Visualization
 `tensorboard --logdir saved/log/`
-
-### Config file format
-Config files are in `.json` format:
-```javascript
-{
-    "name": "Kimchi-resnet34",
-    "n_gpu": 1,
-
-    "arch": {
-        "type": "resnet34",
-        "args": {
-        
-            }
-    },
-
-    "data_loader": {
-        "type": "KimchiDataLoader",
-        "args":{
-            "root_dir": "dataset",
-            "mode": "train",
-            "batch_size": 256,
-            "shuffle": true,
-            "validation_split": 0.0,
-            "num_workers": 2
-        }
-    },
-    
-    "optimizer": {
-        "type": "Adam",
-        "args":{
-            "lr": 0.001,
-            "weight_decay": 0.0001,
-            "amsgrad": true
-        }
-    },
-    "loss": "cross_entropy_loss",
-    "metrics": [
-        "accuracy_"
-    ],
-
-    "lr_scheduler": {
-        "type": "StepLR",
-        "args": {
-            "step_size": 30,
-            "gamma": 0.1
-        }
-    },
-    
-    "trainer": {
-        "epochs": 250,
-
-        "save_dir": "saved/",
-        "save_period": 4,
-        "verbosity": 2,
-        
-        "monitor": "min val_loss",
-        "early_stop": 60,
-
-        "tensorboard": true
-    }
-}
-
-```
 
 ## Folder Structure
   ```
