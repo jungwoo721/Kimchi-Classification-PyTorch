@@ -20,7 +20,7 @@ Classes = ['갓김치', '깍두기', '나박김치', '무생채', '배추김치'
 1. Copy the dataset to the code directory
 1. Run the following command in a shell (`cmd` or `console` in Windows -- We only test this in Unix like OS such as Mac OS)
 ```
-$ Python prepare_dataset.py
+$ python prepare_dataset.py
 ```
 
 ## Train
