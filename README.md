@@ -3,7 +3,7 @@
 <!-- code_chunk_output -->
 <!-- /code_chunk_output -->
 
-# Fine-grained image classification of Korean food
+# Fine-grained Image Classification of Korean Food
 
 ## Introduction
 We will build a neural network to classify the 11 detailed classes of Korean Kimchi
@@ -13,7 +13,7 @@ Classes = ['갓김치', '깍두기', '나박김치', '무생채', '배추김치'
 ## Preparation
 ### Download the dataset
 1. Register you in [NIA's dataset lake](https://aihub.or.kr/join/mberSe.do?currMenu=108&topMenu=108)
-1. Go to [dataset page in NIA for this project (Korean food dataset)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=79) to download the dataset. Make sure to download all data
+2. Go to [dataset page in NIA for this project (Korean food dataset)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=79) to download the dataset.
     - Note that the entire dataset is 15.73GB but we are going to use a portion of it.
 
 ### Prepare the dataset
