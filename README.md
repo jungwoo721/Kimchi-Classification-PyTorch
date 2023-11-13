@@ -5,10 +5,10 @@
 
 ## Train
 `python train.py -c config.json`
+
 `python train.py -r path/to/ckpt_file.pth`
 
 ## Test
-You can test trained model by running `test.py` passing path to the trained checkpoint by `--resume` argument.
 `python test.py -r path/to/ckpt_file.pth`
 
 ## Tensorboard Visualization
