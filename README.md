@@ -6,20 +6,16 @@
 # Fine-grained image classification of Korean food
 
 ## Introduction
-
 We will build a neural network to classify kind of Kimchies. You need to build a deep neural network to classify the 11 detailed classes of Korean Kimchi
 ['갓김치', '깍두기', '나박김치', '무생채', '배추김치', '백김치', '부추김치', '열무김치', '오이소박이', '총각김치', '파김치'].
 
 ## Preparation
-
 ### Download the dataset
-
 1. Register you in [NIA's dataset lake](https://aihub.or.kr/join/mberSe.do?currMenu=108&topMenu=108)
 1. Go to [dataset page in NIA for this project (Korean food dataset)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=79) to download the dataset. Make sure to download all data
     - Note that the entire dataset is 15.73GB but we are going to use a portion of it.
 
 ### Prepare the dataset
-
 1. Copy the dataset to the code directory
 1. Run the following command in a shell (`cmd` or `console` in Windows -- We only test this in Unix like OS such as Mac OS)
 ```
@@ -27,15 +23,22 @@ $ Python prepare_dataset.py
 ```
 
 ## Train
-`python train.py -c config.json`
-
-`python train.py -r path/to/ckpt_file.pth`
+'''
+$ python train.py -c config.json
+'''
+'''
+$ python train.py -r path/to/ckpt_file.pth
+'''
 
 ## Test
-`python test.py -r path/to/ckpt_file.pth`
+'''
+$ python test.py -r path/to/ckpt_file.pth
+'''
 
 ## Tensorboard Visualization
-`tensorboard --logdir saved/log/`
+'''
+$ tensorboard --logdir saved/log/
+'''
 
 ## Folder Structure
   ```
