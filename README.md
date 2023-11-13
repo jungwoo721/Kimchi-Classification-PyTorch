@@ -6,7 +6,8 @@
 # Fine-grained image classification of Korean food
 
 ## Introduction
-We will build a neural network to classify kind of Kimchies. You need to build a deep neural network to classify the 11 detailed classes of Korean Kimchi \n
+We will build a neural network to classify kind of Kimchies. You need to build a deep neural network to classify the 11 detailed classes of Korean Kimchi
+
 ['갓김치', '깍두기', '나박김치', '무생채', '배추김치', '백김치', '부추김치', '열무김치', '오이소박이', '총각김치', '파김치'].
 
 ## Preparation
