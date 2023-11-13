@@ -7,10 +7,6 @@ import model.metric as module_metric
 import model.model as module_arch
 from parse_config import ConfigParser
 
-import matplotlib.pyplot as plt
-##
-#from data_loader.data_loaders import KimchiTestLoader
-
 def main(config):
     logger = config.get_logger('test')
 
@@ -25,7 +21,6 @@ def main(config):
     )
     ###
     
-
     # build model architecture
     model = config.init_obj('arch', module_arch)
     logger.info(model)
@@ -64,10 +59,6 @@ def main(config):
             data, target = data.to(device), target.to(device)
             output = model(data)
 
-            #
-            # save sample images, or do something with output here
-            #
-
             # computing loss, metrics on test set
             loss = loss_fn(output, target)
             batch_size = data.shape[0]
@@ -91,22 +82,13 @@ def main(config):
     })
     logger.info(log)
 
-    ####
+    ## print classwise accuracy
     print(f'classwise_num: {classwise_num}')
     print(f'classwise_correct: {classwise_correct}')
     for key in classwise_num.keys():
         classwise_accuracy[key] = classwise_correct[key] / classwise_num[key]
     print(f'classwise_accuracy: {classwise_accuracy}')
 
-    class_indices, accuracies = zip(*classwise_accuracy.items())
-
-    # Plot
-    plt.bar(class_indices, accuracies, color='blue')
-    plt.xlabel('Class Index')
-    plt.ylabel('Accuracy')
-    plt.title('Class-wise Accuracy')
-    plt.ylim(0, 1)  # Set the y-axis range to [0, 1] for better visualization
-    plt.show()
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser(description='PyTorch Template')

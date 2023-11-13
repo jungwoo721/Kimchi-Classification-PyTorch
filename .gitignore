@@ -113,3 +113,6 @@ datasets/
 
 # datset
 dataset/
+
+# report
+~$report.docx
