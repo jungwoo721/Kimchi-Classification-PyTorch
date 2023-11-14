@@ -10,5 +10,5 @@ plt.bar(class_indices, accuracies, color='blue')
 plt.xlabel('Class Index')
 plt.ylabel('Accuracy')
 plt.title('Class-wise Accuracy')
-plt.ylim(0, 1)  # Set the y-axis range to [0, 1] for better visualization
+plt.ylim(0, 1)  
 plt.show()
