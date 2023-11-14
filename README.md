@@ -58,7 +58,6 @@ $ python test.py -r path/to/ckpt_file.pth
 ```
 $ tensorboard --logdir saved/log/
 ```
-![tensorboard example](img src="./assets/examples/tensorboard.png")
 
 ## Folder Structure
   ```
