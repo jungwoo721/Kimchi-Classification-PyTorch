@@ -38,6 +38,7 @@ test.py
 test.sh
 train.py
 visualize_classwise_accuracy.py
+assets/
 ```
 
 
