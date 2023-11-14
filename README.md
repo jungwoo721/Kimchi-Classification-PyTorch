@@ -57,7 +57,7 @@ $ python test.py -r path/to/ckpt_file.pth
 ## Tensorboard Visualization
 ```
 $ tensorboard --logdir saved/log/
-<img width="1389" alt="tensorboard" src="https://github.com/jungwoo721/AAI3201_DL_HW_01/assets/80103122/fdedea6f-7534-41fc-9a3f-a2fda3126f45">
+<img src="assets/examples/tensorboard.png">
 
 ```
 
