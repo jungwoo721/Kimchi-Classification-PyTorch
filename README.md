@@ -23,25 +23,6 @@ Classes = ['갓김치', '깍두기', '나박김치', '무생채', '배추김치'
 $ python prepare_dataset.py
 ```
 
-## What I implemented:
-```
-data_loader/data_loaders.py
-data_loader/kimchi_dataset.py
-model/loss.py
-model/metric.py
-model/model.py
-trainer/trainer.py/train_epoch()
-configs_xxx.json
-README.md
-requirements.txt
-test.py
-test.sh
-train.py
-visualize_classwise_accuracy.py
-assets/
-```
-
-
 ## Train
 ```
 $ python train.py -c config.json
